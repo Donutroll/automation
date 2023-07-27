@@ -14,6 +14,8 @@ uint8_t Llight_data[] = {
 	0, 0, 0, 0, 0, 0, 0, 0,
 };
 
+
+//not done
 uint32_t blinds_data[] = {
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,

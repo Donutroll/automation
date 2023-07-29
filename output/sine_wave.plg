@@ -7,3 +7,304 @@ C:\Users\IamDu\Desktop\sine_wave\sine_wave.uvproj
 Project File Date:  07/27/2023
 
 <h2>Output:</h2>
+Build target 'QVGA Base Board'
+compiling main.c...
+src\automation.h(4): warning:  #1-D: last line of file ends without a newline
+src\automation.h(4): warning:  #1295-D: Deprecated declaration readSensor - give arg types
+src\main.c(23): warning:  #223-D: function "initADC" declared implicitly
+src\main.c(51): warning:  #223-D: function "updateDevices" declared implicitly
+src\main.c(54): error:  #20: identifier "LON" is undefined
+src\main.c(54): error:  #20: identifier "RON" is undefined
+src\main.c(59): warning:  #111-D: statement is unreachable
+src\main.c(39): warning:  #177-D: variable "states" was declared but never referenced
+src\main.c(40): warning:  #177-D: variable "noSensor" was declared but never referenced
+compiling sine_wave_data.c...
+compiling automation.c...
+src\automation.c(41): error:  #29: expected an expression
+src\automation.c(47): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+compiling timer.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\automation.h(4): warning:  #1-D: last line of file ends without a newline
+src\automation.h(4): warning:  #1295-D: Deprecated declaration readSensor - give arg types
+src\main.c(23): warning:  #223-D: function "initADC" declared implicitly
+src\main.c(51): warning:  #223-D: function "updateDevices" declared implicitly
+src\main.c(54): error:  #20: identifier "LON" is undefined
+src\main.c(54): error:  #20: identifier "RON" is undefined
+src\main.c(59): warning:  #111-D: statement is unreachable
+src\main.c(39): warning:  #177-D: variable "states" was declared but never referenced
+src\main.c(40): warning:  #177-D: variable "noSensor" was declared but never referenced
+compiling automation.c...
+src\automation.c(41): error:  #29: expected an expression
+src\automation.c(47): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(23): warning:  #223-D: function "initADC" declared implicitly
+src\main.c(51): error:  #165: too few arguments in function call
+src\main.c(54): error:  #20: identifier "LON" is undefined
+src\main.c(54): error:  #20: identifier "RON" is undefined
+src\main.c(59): warning:  #111-D: statement is unreachable
+src\main.c(39): warning:  #177-D: variable "states" was declared but never referenced
+src\main.c(40): warning:  #177-D: variable "noSensor" was declared but never referenced
+compiling automation.c...
+src\automation.c(41): error:  #29: expected an expression
+src\automation.c(47): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(51): error:  #165: too few arguments in function call
+src\main.c(54): error:  #20: identifier "LON" is undefined
+src\main.c(54): error:  #20: identifier "RON" is undefined
+src\main.c(59): warning:  #111-D: statement is unreachable
+src\main.c(39): warning:  #177-D: variable "states" was declared but never referenced
+src\main.c(40): warning:  #177-D: variable "noSensor" was declared but never referenced
+compiling automation.c...
+src\automation.c(41): error:  #29: expected an expression
+src\automation.c(47): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(59): warning:  #111-D: statement is unreachable
+src\main.c(39): warning:  #177-D: variable "states" was declared but never referenced
+src\main.c(40): warning:  #177-D: variable "noSensor" was declared but never referenced
+compiling automation.c...
+src\automation.c(41): error:  #29: expected an expression
+src\automation.c(47): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(56): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(56): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(55): error:  #29: expected an expression
+src\automation.c(57): error:  #65: expected a ";"
+src\automation.c(76): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(56): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(56): error:  #29: expected an expression
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling automation.c...
+src\automation.c(77): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3288 RO-data=32 RW-data=4 ZI-data=1580  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\profile.h(15): error:  #20: identifier "bool" is undefined
+src\main.c(57): warning:  #111-D: statement is unreachable
+compiling sine_wave_data.c...
+src\sine_wave_data.c(37): warning:  #1-D: last line of file ends without a newline
+compiling automation.c...
+src\profile.h(15): error:  #20: identifier "bool" is undefined
+src\automation.c(44): error:  #29: expected an expression
+src\automation.c(55): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(76): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\profile.h(2): error:  #5: cannot open source input file "bool.h": No such file or directory
+compiling automation.c...
+src\profile.h(2): error:  #5: cannot open source input file "bool.h": No such file or directory
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(57): warning:  #111-D: statement is unreachable
+compiling automation.c...
+src\automation.c(44): error:  #29: expected an expression
+src\automation.c(55): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(76): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(57): warning:  #111-D: statement is unreachable
+compiling automation.c...
+src\automation.c(44): error:  #29: expected an expression
+src\automation.c(55): warning:  #12-D: parsing restarts here after previous syntax error
+src\automation.c(76): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(51): warning:  #111-D: statement is unreachable
+compiling sine_wave_data.c...
+src\sine_wave_data.c(38): warning:  #1-D: last line of file ends without a newline
+compiling automation.c...
+src\automation.c(76): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3300 RO-data=32 RW-data=4 ZI-data=1452  
+".\output\sine_wave.axf" - 0 Error(s), 3 Warning(s).
+Build target 'QVGA Base Board'
+compiling sine_wave_data.c...
+compiling automation.c...
+linking...
+Program Size: Code=3300 RO-data=32 RW-data=4 ZI-data=1452  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(28): warning:  #223-D: function "sdramInit" declared implicitly
+src\main.c(29): warning:  #223-D: function "lcdInit" declared implicitly
+src\main.c(29): error:  #20: identifier "lcd_config" is undefined
+src\main.c(30): warning:  #223-D: function "lcdTurnOn" declared implicitly
+src\main.c(31): warning:  #223-D: function "lcd_fillScreen" declared implicitly
+src\main.c(31): error:  #20: identifier "BLACK" is undefined
+src\main.c(56): warning:  #111-D: statement is unreachable
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(6): error:  #5: cannot open source input file "lcd/lcd_hw.h": No such file or directory
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(60): warning:  #111-D: statement is unreachable
+compiling font5x7.c...
+font5x7.c: Error:  #5: cannot open source input file "lcd\font5x7.c": No such file or directory
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(6): error:  #5: cannot open source input file "lcd/lcd_hw.h": No such file or directory
+compiling font5x7.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(60): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=12036 RO-data=808 RW-data=28 ZI-data=1452  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+linking...
+Program Size: Code=12036 RO-data=808 RW-data=28 ZI-data=1452  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(60): warning:  #111-D: statement is unreachable
+compiling sine_wave_data.c...
+linking...
+Program Size: Code=12036 RO-data=808 RW-data=76 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(61): warning:  #111-D: statement is unreachable
+compiling timer.c...
+linking...
+Program Size: Code=3300 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(65): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3308 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(65): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3316 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3316 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3316 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3320 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3320 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3316 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(66): warning:  #111-D: statement is unreachable
+compiling timer.c...
+linking...
+Program Size: Code=3320 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3364 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3368 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=3372 RO-data=32 RW-data=52 ZI-data=1388  
+".\output\sine_wave.axf" - 0 Error(s), 0 Warning(s).

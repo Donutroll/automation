@@ -1,4 +1,5 @@
 #include <stdint.h>
 
-uint8_t setDevices(profile p, uint8_t states);
-float readSensor();
+void updateDevices(profile p);
+float readSensor(void);
+void initADC(void);

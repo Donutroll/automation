@@ -16,7 +16,7 @@
 ### ADS-LD Output File: '.\output\sine_wave.axf'
 ### ADS-LD Command File: '.\output\sine_wave.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\sine_wave.lnp', Handle=0x000009FC
+### Creating CmdFile '.\output\sine_wave.lnp', Handle=0x00000BB8
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\sine_wave.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

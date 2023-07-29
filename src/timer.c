@@ -7,6 +7,7 @@
 
 
 static volatile uint16_t time; //bits 0~5 hold minute, 6~10 hold hour
+static volatile uint8_t seconds;
 
 uint16_t getHour() {
 	return hour;
@@ -29,25 +30,29 @@ void udelay(unsigned int delay_in_us) {
 
 
 __irq void updateTime() {
-	++time;
-	
+	++seconds;
+	if (seconds >= 60) {
+		++minute;
+		seconds = 0;
+	}
 	if (minute >= 60) 
 		time = (hour + 1) << 6; //reset minute, add hour
 	if (hour >= 24)
 		time = 0;
+
+	T1IR = 0x1; //reset interrupt
 	
-	T1IR = 0; //reset interrupt
 }
 	
 
 void initClock() {
-	T1PR = 72000000 - 1;
-	T1MR0 = 1;
+	T1PR = 1; 								
+	T1MR0 = (Fcclk - 1)/100; //this sets 0.1 = 1s idk why, theres also some build in error
 	
 	T1TCR = 0x1; //enable timer
 	VICVectAddr5 = (unsigned) updateTime;
 	VICIntEnable = 0x1 << 5; //enable timer1 interrupt
-	T1MCR = 0x3; //generate interrupt and reset CLK on match
+	T1MCR = 0x3; //generate interrupt and stop 
 	
 }
 

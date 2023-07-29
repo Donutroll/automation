@@ -3,52 +3,64 @@
 #include "profile.h"
 #include "timer.h"
 #include "automation.h"
-
-extern uint8_t Rlight_data[];
-extern uint8_t Llight_data[];
-
+#include "../lcd/lcd_hw.h"
+#include "../lcd/lcd_grph.h"
+#include "../lcd/lcd_cfg.h"
+#include "../lcd/sdram.h"
 #define minute time & 0x1F
 #define hour time << 6
- 
 
+extern uint16_t data[];
 
 void init() {
+
 	
 	//system clock
 	initClock();
 	
 	//ADC
+	initADC();
 	
 	//set output
 	FIO0DIR |= 0x1 << 22;	//ladder enable
-	FIO2DIR |= 0xFF << 1; //ladder leds
+	FIO2DIR |= 0xFE << 1; //ladder leds
 	FIO3DIR |= 0x3F << 16; //RGB leds
 	
 	//enable
 	FIO0SET = 0x1 << 22; //ladder
 	
+	//set ladder leds to 0
+	FIO2PIN &= ~(0xFE << 1);
+	
+	/*
+	//LCD setup
+	sdramInit();
+	lcdInit(&lcd_config); 
+	lcdTurnOn();
+	lcd_fillScreen(BLACK);
+	*/
 }
 
 
 int main(void) {
 	
-	profile main;
-	uint8_t states = 0;
+	profile admin;
 	uint8_t prevHour = 100;
-	float sensorVal = 0;
 	
-	main.name = "user";
-	main.Rlight = Rlight_data;
-	main.Llight = Llight_data;
+	admin.name = "admin";
+	admin.data = data;
+	admin.useSensor = 0;
 	
 	init();
 	
 	while(1) {
 		if (prevHour != getHour()) {
 			prevHour = getHour();
-			setDevices(main, states);
+			updateDevices(admin);
 		}
-		sensorVal = readSensor();
+		if (admin.useSensor && (readSensor() < 0.2f)) {
+				FIO2PIN |= 0x3 << 4;
+		}
 		
 	}
 	return 0;

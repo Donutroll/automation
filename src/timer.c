@@ -47,7 +47,7 @@ __irq void updateTime() {
 
 void initClock() {
 	T1PR = 1; 								
-	T1MR0 = (Fcclk - 1)/100; //this sets 0.1 = 1s idk why, theres also some build in error
+	T1MR0 = (Fcclk - 1)/100; //this sets 0.1 = 1s maybe bc my pc is slow, theres also some build in error
 	
 	T1TCR = 0x1; //enable timer
 	VICVectAddr5 = (unsigned) updateTime;

@@ -54,12 +54,12 @@ int main(void) {
 	init();
 	
 	while(1) {
-		if (prevHour != getHour()) {
-			prevHour = getHour();
-			updateDevices(admin);
-		}
 		if (admin.useSensor && (readSensor() < 0.2f)) {
 				FIO2PIN |= 0x3 << 4;
+		}
+		else if (prevHour != getHour()) {
+			prevHour = getHour();
+			updateDevices(admin);
 		}
 		
 	}

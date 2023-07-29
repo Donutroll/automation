@@ -433,6 +433,16 @@
               <FileType>5</FileType>
               <FilePath>.\src\automation.h</FilePath>
             </File>
+            <File>
+              <FileName>drawTime.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\drawTime.c</FilePath>
+            </File>
+            <File>
+              <FileName>drawTime.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\drawTime.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

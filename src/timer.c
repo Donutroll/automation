@@ -1,6 +1,9 @@
 #include "lpc24xx.h"
 #include <stdint.h>
-
+#include "../lcd/lcd_hw.h"
+#include "../lcd/lcd_grph.h"
+#include "../lcd/lcd_cfg.h"
+#include "../lcd/sdram.h"
 #define U_CLK 71 //clkspd in us
 #define minute time & 0x2F
 #define hour time >> 6
@@ -8,6 +11,8 @@
 
 static volatile uint16_t time; //bits 0~5 hold minute, 6~10 hold hour
 static volatile uint8_t seconds;
+
+
 
 uint16_t getHour() {
 	return hour;
@@ -55,4 +60,7 @@ void initClock() {
 	T1MCR = 0x3; //generate interrupt and stop 
 	
 }
+
+
+
 

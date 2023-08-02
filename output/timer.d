@@ -5,3 +5,4 @@
 .\output\timer.o: src\../lcd/lcd_grph.h
 .\output\timer.o: src\../lcd/lcd_cfg.h
 .\output\timer.o: src\../lcd/sdram.h
+.\output\timer.o: src\drawTime.h

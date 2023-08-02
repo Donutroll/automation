@@ -4,10 +4,15 @@
 #include "../lcd/lcd_grph.h"
 #include "../lcd/lcd_cfg.h"
 #include "../lcd/sdram.h"
+#include "drawTime.h"
 #define U_CLK 71 //clkspd in us
 #define minute time & 0x2F
 #define hour time >> 6
 
+#define CLOCKX 0
+#define CLOCKY 0
+#define CLOCKWIDTH 60
+#define CLOCKHEIGHT 27
 
 static volatile uint16_t time; //bits 0~5 hold minute, 6~10 hold hour
 static volatile uint8_t seconds;
@@ -39,20 +44,21 @@ __irq void updateTime() {
 	if (seconds >= 60) {
 		++minute;
 		seconds = 0;
-	}
 	if (minute >= 60) 
 		time = (hour + 1) << 6; //reset minute, add hour
 	if (hour >= 24)
 		time = 0;
+	
+		drawTime(hour,minute,CLOCKX,CLOCKY, CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);
+	}
 
 	T1IR = 0x1; //reset interrupt
-	
 }
 	
 
 void initClock() {
 	T1PR = 1; 								
-	T1MR0 = (Fcclk - 1)/100; //this sets 0.1 = 1s maybe bc my pc is slow, theres also some build in error
+	T1MR0 = (Fcclk - 1)/100; 
 	
 	T1TCR = 0x1; //enable timer
 	VICVectAddr5 = (unsigned) updateTime;

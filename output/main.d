@@ -8,3 +8,4 @@
 .\output\main.o: src\../lcd/lcd_grph.h
 .\output\main.o: src\../lcd/lcd_cfg.h
 .\output\main.o: src\../lcd/sdram.h
+.\output\main.o: src\drawTime.h

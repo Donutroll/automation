@@ -5,4 +5,3 @@
 .\output\drawtime.o: src\../lcd/lcd_grph.h
 .\output\drawtime.o: src\../lcd/lcd_cfg.h
 .\output\drawtime.o: src\../lcd/sdram.h
-.\output\drawtime.o: src\drawTime.h

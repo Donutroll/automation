@@ -4,10 +4,10 @@
 #include "../lcd/lcd_grph.h"
 #include "../lcd/lcd_cfg.h"
 #include "../lcd/sdram.h"
-#include "drawTime.h"
 #define BORDER 2
 #define THICKNESS 1
 
+//ordering of function calls
 //   -	1
 // 4| |5
 //   -3
@@ -158,6 +158,7 @@ void drawTime(unsigned short x1, unsigned short y1, unsigned short x2, unsigned 
 	//reset
 	lcd_fillRect(x1, y1, x2, y2, BLACK);
 	
+	//draw dividing circles
 	lcd_fillcircle(part3 + BORDER, y1 + height/4, 2, WHITE);
 	lcd_fillcircle(part3 + BORDER, y1 + height*3/4, 2, WHITE);
 	

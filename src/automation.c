@@ -27,38 +27,34 @@
 											// to produce the clock for the A/D converter, which should be less than or equal to 4.5 MHz
 
 
+void configureLadder() {
+	
+	PINSEL4 = 0; //set to GPIO
+	
+	FIO0DIR |= 0x1 << 22;	//ladder enable output
+	FIO2DIR |= 0xFF << 1; //ladder leds output
+	
+	//enable
+	FIO0SET = 0x1 << 22; //ladder
+	
+	//set ladder leds to 0
+	FIO2PIN &= ~(0xFF << 1);
+}
 
-void updateDevices(profile *p) {
-	uint8_t i = getHour(); //get index
-	
 
-	if (((p->data[i]) & 0x1) ^ blind1) //read last input
-		FIO2PIN ^= 0x1 << 1;
+void updateDevices(profile *p, uint8_t i) {
+	configureLadder();//give IO to ladder
+
+	FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | p->data[i] << 1; //read bit pattern
 	
-	if (((p->data[i] >> 1) & 0x1) ^ blind2)
-		FIO2PIN ^= 0x1 << 2;
-	
-	if (((p->data[i] >> 2) & 0x1) ^ blind3)
-		FIO2PIN ^= 0x1 << 3;
-	
-	if (((p->data[i] >> 3) & 0x1) ^ light1) {	
-		FIO3PIN ^= RRED | RGREEN | RBLUE;	
-		FIO2PIN ^= 0x1 << 4;
-	}
-	
-	if (((p->data[i] >> 4) & 0x1) ^ light2) { 
-		FIO3PIN ^= LRED | LGREEN | LBLUE;
-		FIO2PIN ^= 0x1 << 5;
-	}
-	
-	if (((p->data[i] >> 5) & 0x1) ^ sprinkler)
-		FIO2PIN ^= 0x1 << 6;
+	PINSEL4  = (PINSEL4 & 0xF0300000) | 0x014FFFFF; //return control to LCD
+	return;
 		
 }
 	
 
 float readSensor() {
-	float x = 1;
+	float x = 0;
 	
 	AD0CR |= 1 << 24; //start conversion
 	while(!(AD0DR1 & (1U << 31)));//wait till complete
@@ -70,7 +66,7 @@ float readSensor() {
 
 void initADC() {
 	PCONP |= 0x1 << 12;	//enable dac
-	PINSEL1 = 0x5 << 16;	//set P0.24 to AD0
+	PINSEL1 = (PINSEL1 & ~(0x5 << 16)) | 0x5 << 16;	//set P0.24 to AD0
 	AD0CR =	ADCHANNEL | CLKDIV;	//configure ADC port set clk speed to 4.5Mhz
 	AD0CR |= 1 << 21;	//set to operational mode
 }

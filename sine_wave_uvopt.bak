@@ -221,7 +221,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1042</TopLine>
+      <TopLine>1043</TopLine>
       <CurrentLine>1054</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\LPC2400.s</PathWithFileName>
@@ -240,7 +240,7 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>23</ColumnNumber>
+      <ColumnNumber>24</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>29</TopLine>
       <CurrentLine>45</CurrentLine>
@@ -254,7 +254,7 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>31</CurrentLine>
@@ -270,7 +270,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>33</TopLine>
+      <TopLine>1</TopLine>
       <CurrentLine>47</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\automation.c</PathWithFileName>
@@ -459,7 +459,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>105</TopLine>
+      <TopLine>106</TopLine>
       <CurrentLine>125</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\lcd\lcd_hw.c</PathWithFileName>

@@ -1,0 +1,194 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\IamDu\Desktop\bubblepop-20230802T073837Z-001\bubblepop\bubblepop.uvproj
+Project File Date:  08/06/2023
+
+<h2>Output:</h2>
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(51): error:  #20: identifier "hour" is undefined
+src\main.c(51): error:  #20: identifier "minute" is undefined
+src\main.c(59): error:  #20: identifier "seconds" is undefined
+src\main.c(34): warning:  #550-D: variable "pressure" was set but never used
+compiling bubbles.c...
+compiling touch.c...
+src\touch.c(12): warning:  #61-D: integer operation result is out of range
+src\touch.c(12): warning:  #68-D: integer conversion resulted in a change of sign
+compiling drawTime.c...
+src\drawTime.c(21): warning:  #177-D: variable "width" was declared but never referenced
+compiling timer.c...
+src\timer.c(12): warning:  #177-D: variable "hour" was declared but never referenced
+src\timer.c(13): warning:  #177-D: variable "minute" was declared but never referenced
+src\timer.c(14): warning:  #177-D: variable "seconds" was declared but never referenced
+compiling automation.c...
+compiling sine_wave_data.c...
+compiling font5x7.c...
+compiling lcd_grph.c...
+compiling lcd_hw.c...
+compiling sdram.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(13): warning:  #177-D: variable "str" was declared but never referenced
+src\main.c(40): error:  #20: identifier "hour" is undefined
+src\main.c(40): error:  #20: identifier "minute" is undefined
+src\main.c(40): error:  #20: identifier "CLOCKX" is undefined
+src\main.c(40): error:  #20: identifier "CLOCKY" is undefined
+src\main.c(40): error:  #20: identifier "CLOCKWIDTH" is undefined
+src\main.c(40): error:  #20: identifier "CLOCKHEIGHT" is undefined
+src\main.c(62): error:  #20: identifier "seconds" is undefined
+compiling timer.c...
+compiling automation.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(13): warning:  #177-D: variable "str" was declared but never referenced
+src\main.c(42): warning:  #223-D: function "initADC" declared implicitly
+src\main.c(48): error:  #20: identifier "profile" is undefined
+src\main.c(53): error:  #20: identifier "data" is undefined
+src\main.c(56): error:  #268: declaration may not appear after executable statement in block
+src\main.c(69): error:  #20: identifier "seconds" is undefined
+src\main.c(78): warning:  #223-D: function "readSensor" declared implicitly
+src\main.c(83): error:  #20: identifier "hourNow" is undefined
+src\main.c(85): warning:  #223-D: function "updateDevices" declared implicitly
+compiling timer.c...
+compiling automation.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(41): warning:  #223-D: function "initADC" declared implicitly
+src\main.c(47): error:  #20: identifier "profile" is undefined
+src\main.c(52): error:  #20: identifier "data" is undefined
+src\main.c(55): error:  #268: declaration may not appear after executable statement in block
+src\main.c(68): error:  #20: identifier "seconds" is undefined
+src\main.c(77): warning:  #223-D: function "readSensor" declared implicitly
+src\main.c(82): error:  #20: identifier "hourNow" is undefined
+src\main.c(84): warning:  #223-D: function "updateDevices" declared implicitly
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\automation.h(3): error:  #20: identifier "profile" is undefined
+src\main.c(48): error:  #20: identifier "profile" is undefined
+src\main.c(53): error:  #20: identifier "data" is undefined
+src\main.c(56): error:  #268: declaration may not appear after executable statement in block
+src\main.c(69): error:  #20: identifier "seconds" is undefined
+src\main.c(83): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\automation.h(3): error:  #20: identifier "profile" is undefined
+src\main.c(54): error:  #20: identifier "data" is undefined
+src\main.c(57): error:  #268: declaration may not appear after executable statement in block
+src\main.c(70): error:  #20: identifier "seconds" is undefined
+src\main.c(84): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\automation.h(3): error:  #20: identifier "profile" is undefined
+src\main.c(58): error:  #268: declaration may not appear after executable statement in block
+src\main.c(85): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\profile.h(15): error:  #256: invalid redeclaration of type name "profile" (declared at line 15)
+src\main.c(58): error:  #268: declaration may not appear after executable statement in block
+src\main.c(85): error:  #20: identifier "hourNow" is undefined
+src\main.c(87): error:  #167: argument of type "profile *" is incompatible with parameter of type "profile *"
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\profile.h(7): error:  #256: invalid redeclaration of type name "profile" (declared at line 7)
+src\main.c(58): error:  #268: declaration may not appear after executable statement in block
+src\main.c(85): error:  #20: identifier "hourNow" is undefined
+src\main.c(87): error:  #167: argument of type "profile *" is incompatible with parameter of type "profile *"
+compiling automation.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(57): error:  #268: declaration may not appear after executable statement in block
+src\main.c(84): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(84): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(50): error:  #20: identifier "CLOCKX" is undefined
+src\main.c(84): error:  #20: identifier "hourNow" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(51): warning:  #68-D: integer conversion resulted in a change of sign
+src\main.c(87): error:  #20: identifier "hourNow" is undefined
+compiling timer.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(82): error:  #29: expected an expression
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+linking...
+Program Size: Code=19708 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+linking...
+Program Size: Code=19704 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(62): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+src\main.c(62): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+src\main.c(63): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+src\main.c(63): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+src\main.c(77): error:  #20: identifier "true" is undefined
+src\main.c(82): error:  #165: too few arguments in function call
+compiling automation.c...
+src\automation.c(48): error:  #20: identifier "admin" is undefined
+src\automation.c(49): warning:  #223-D: function "readSensor" declared implicitly
+src\automation.c(63): error:  #159: declaration is incompatible with previous "readSensor" (declared at line 49)
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(77): error:  #20: identifier "true" is undefined
+src\main.c(82): error:  #165: too few arguments in function call
+compiling automation.c...
+src\automation.c(48): error:  #20: identifier "admin" is undefined
+src\automation.c(49): warning:  #223-D: function "readSensor" declared implicitly
+src\automation.c(63): error:  #159: declaration is incompatible with previous "readSensor" (declared at line 49)
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(84): error:  #165: too few arguments in function call
+compiling automation.c...
+src\automation.c(48): error:  #20: identifier "admin" is undefined
+src\automation.c(49): warning:  #223-D: function "readSensor" declared implicitly
+src\automation.c(63): error:  #159: declaration is incompatible with previous "readSensor" (declared at line 49)
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(84): error:  #165: too few arguments in function call
+compiling automation.c...
+src\automation.c(49): warning:  #223-D: function "readSensor" declared implicitly
+src\automation.c(63): error:  #159: declaration is incompatible with previous "readSensor" (declared at line 49)
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(84): error:  #165: too few arguments in function call
+compiling automation.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+linking...
+Program Size: Code=19732 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling data.c...
+linking...
+Program Size: Code=19732 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).

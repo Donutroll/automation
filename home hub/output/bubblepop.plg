@@ -402,3 +402,373 @@ src\data.c(35): warning:  #1-D: last line of file ends without a newline
 linking...
 Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
 ".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+compiling automation.c...
+linking...
+Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(59): warning:  #550-D: variable "admin" was set but never used
+src\main.c(61): warning:  #550-D: variable "update" was set but never used
+linking...
+Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+linking...
+Program Size: Code=19904 RO-data=808 RW-data=76 ZI-data=620  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+compiling gui.c...
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
+src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+compiling gui.c...
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(11): error:  #5: cannot open source input file "gui.h": No such file or directory
+compiling gui.c...
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(11): error:  #5: cannot open source input file "gui.h": No such file or directory
+compiling gui.c...
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+compiling gui.c...
+src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
+src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
+src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
+src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
+src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
+src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(167): error:  #20: identifier "i" is undefined
+src\gui.c(168): error:  #20: identifier "horz_space" is undefined
+src\gui.c(169): error:  #20: identifier "vert_space" is undefined
+src\gui.c(169): error:  #20: identifier "rect_height" is undefined
+src\gui.c(170): error:  #20: identifier "rect_width" is undefined
+src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+Target not created
+Build target 'QVGA Base Board'
+compiling gui.c...
+src\gui.c(76): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(77): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(78): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(155): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(228): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(167): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(316): warning:  #223-D: function "read_pressure" declared implicitly
+src\gui.c(241): warning:  #177-D: variable "str" was declared but never referenced
+linking...
+.\output\bubblepop.axf: Error: L6218E: Undefined symbol read_pressure (referred from gui.o).
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\main.c(78): warning:  #223-D: function "getPressure" declared implicitly
+compiling gui.c...
+src\gui.c(86): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(87): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(88): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(165): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(238): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(177): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(251): warning:  #177-D: variable "str" was declared but never referenced
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(2): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=22236 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(2): warning:  #1-D: last line of file ends without a newline
+src\main.c(42): warning:  #223-D: function "drawClock" declared implicitly
+src\main.c(85): warning:  #223-D: function "drawClock" declared implicitly
+compiling gui.c...
+src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 10 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(2): warning:  #1-D: last line of file ends without a newline
+src\main.c(35): warning:  #223-D: function "drawClock" declared implicitly
+src\main.c(79): warning:  #223-D: function "drawClock" declared implicitly
+compiling timer.c...
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 3 Warning(s).
+Build target 'QVGA Base Board'
+compiling timer.c...
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 7 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
+src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
+src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
+src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
+src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
+src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
+linking...
+Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+".\output\bubblepop.axf" - 0 Error(s), 7 Warning(s).

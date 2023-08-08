@@ -4,18 +4,12 @@
 #include "drawTime.h"
 #define U_CLK 71 //clkspd in us
 
-#define CLOCKX 0
-#define CLOCKY 0
-#define CLOCKWIDTH 60
-#define CLOCKHEIGHT 27
-
 static uint8_t hour = 0;
 static uint8_t minute = 0;
 static uint8_t seconds = 0;
 
 uint8_t getHour() {
 	return hour;
-	hour++;
 }
 
 uint8_t getMinute() {

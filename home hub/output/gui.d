@@ -1,0 +1,11 @@
+.\output\gui.o: src\gui.c
+.\output\gui.o: src\touch.h
+.\output\gui.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\output\gui.o: src\lpc24xx.h
+.\output\gui.o: src\delay.h
+.\output\gui.o: src\lcd/lcd_hw.h
+.\output\gui.o: src\lcd/lcd_grph.h
+.\output\gui.o: src\lcd/lcd_cfg.h
+.\output\gui.o: src\lcd/sdram.h
+.\output\gui.o: C:\Keil\ARM\RV31\Inc\stdio.h
+.\output\gui.o: src\drawTime.h

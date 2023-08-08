@@ -51,14 +51,15 @@ float readSensor() {
 //Lled -> light 2
 //bit 6~8 -> blind 1~3
 void configureDevices(uint8_t control) {	
-	//FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | control << 1; //store bits
 
+	//get bits
 	uint8_t blinds = control & 0x7;
 	uint8_t sprinkler = (control >> 5) & 0x1;
 	uint8_t lights = (control >> 3) & 0x3;
 	uint32_t Rled = (lights & 0x1) ? RWHITE : 0x0;
 	uint32_t Lled = (lights & 0x2) ? LWHITE : 0x0;
 	
+	//write to corresponding leds
 	FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | (blinds << 6 | sprinkler << 1);
 	FIO3PIN = (FIO3PIN & ~(0x3F << 16)) | Rled | Lled;
  }

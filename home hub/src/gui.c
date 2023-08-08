@@ -10,13 +10,28 @@
 #include "lcd/sdram.h"
 
 #include "stdio.h"
+#include "drawTime.h"
+
+#define CLOCKX 50
+#define CLOCKY 30
+#define CLOCKWIDTH  100   //60
+#define CLOCKHEIGHT 40    //27
+
+void drawClock(int hour, int minute) {
+	drawTime(hour, minute, CLOCKX, CLOCKY, 
+		CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
+}
+
+float getPressure(int x, int z1, int z2) {
+	float pressure = 0;
+	if (z1 == 0)
+		pressure = 0;
+	else
+	 pressure = x * (z2/z1 - 1);
+	return pressure;
+}
 
 void draw_main(void) {
-	int i;
-	int rect_width = 180;
-	int rect_height = 50;
-	int vert_space = 22;
-	int horz_space = 30;
 
 	lcd_line(0, 80, 240, 80, BLACK);
 
@@ -162,6 +177,12 @@ int time_set(int x,  int y) {
 
 int main_screen(int x ,int y, int automatic, int rect_perim[][7], int current_screen[5]){
 
+	
+	int i;
+	int rect_width = 180;
+	int rect_height = 50;
+	int vert_space = 22;
+	int horz_space = 30;
 	//bit 0 contains automation flag, bit 1 is manual flag, bit 2~7 are control flags
 	uint8_t control = 0;
 	for (i = 0; i <= 2; i++) {
@@ -231,7 +252,7 @@ int main_screen(int x ,int y, int automatic, int rect_perim[][7], int current_sc
 
 
 
-int render_screen(void) {
+int screen_control(void) {
 	char x=0, y=0;
 	char z1 = 0;
 	char z2 = 0;
@@ -312,9 +333,9 @@ int render_screen(void) {
 			rect_perim[0][4] = DARK_GRAY;
 		}
 		
-		read_pressure(&z1, &z2);
+		touch_read_z(&z1, &z2);
 		
-		pressure = (4096*z1)/(x*(z2-z1));
+		pressure = getPressure(x, z1, z2);
 		
 		//sprintf(str, "pressure: %d", pressure);
 		//lcd_putString(10, 10, str);

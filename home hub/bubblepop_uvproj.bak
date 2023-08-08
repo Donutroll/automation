@@ -424,9 +424,9 @@
               <FilePath>.\src\automation.c</FilePath>
             </File>
             <File>
-              <FileName>sine_wave_data.c</FileName>
+              <FileName>data.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\sine_wave_data.c</FilePath>
+              <FilePath>.\src\data.c</FilePath>
             </File>
           </Files>
         </Group>

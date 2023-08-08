@@ -4,29 +4,14 @@
 #include "lcd/lcd_cfg.h"
 #include "lcd/sdram.h"
 #include <stdio.h>
-#include "drawTime.h"
 #include "timer.h"
 #include <LPC23xx.H>
 #include "automation.h"
+#include "gui.h"
 
 extern uint16_t data[];
 #define true 1
 #define false 0
-
-#define CLOCKX 0
-#define CLOCKY 0
-#define CLOCKWIDTH 60
-#define CLOCKHEIGHT 27
-
-float getPressure(int x, int z1, int z2) {
-	float pressure = 0;
-	if (z1 == 0)
-		pressure = 0;
-	else
-	 pressure = x * (z2/z1 - 1);
-	return pressure;
-}
-
 
 void init() {
 		//Setup LCD and 'blow' first bubble
@@ -47,8 +32,9 @@ void init() {
 	//initClock();
 
 	
-	drawTime(getHour(), getMinute(), CLOCKX, CLOCKY, 
-		CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
+	drawClock(getHour(), getMinute());
+	draw_main();
+	
 	//oepn ADC
 	initADC();
 	
@@ -65,15 +51,16 @@ int main(void) {
 
 	admin.name = "admin";
 	admin.data = data;
-	admin.useSensor = 0; //sensor is on						
+	admin.useSensor = 1; //sensor is on						
 	
 	init();
 	
 	while (1) {
 			
 		//render important stuff
-		PINSEL4  = ((PINSEL4 & 0xF0300000) | 0x014FFFFF);
-		FIO0CLR = 0x1 << 22; //led ladder
+		PINSEL4 = ((PINSEL4 & 0xF0300000) | 0x014FFFFF);
+		FIO0CLR = 0x1 << 22; //clear ladder enable
+		
 		//Read in X and Y coordinates
 		touch_read_xy(&x,&y);
 		touch_read_z(&z1, &z2);
@@ -89,21 +76,20 @@ int main(void) {
 		
 		//update time for this loop iteration
 		//if (updateTime()) {
-			drawTime(hourNow, getMinute(), CLOCKX, CLOCKY, 
-			CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
+			drawClock(hourNow, getMinute());//render clock
 			hourNow = (hourNow + 1) % 24; //change to hourNow = getHour();
 			update = true;
 		//}
 			
 		PINSEL4  = ~((PINSEL4 & 0xF0300000) | 0x014FFFFF);
-		FIO0SET = 0x1 << 22; //led ladder
+
 		
 		//automation part
 		configureLadder(); //give control to ladder
 		updateDevices(&admin, hourNow, update);
 		update = false;	
 
-		udelay(500000);
+		udelay(5000);
 		
 	}
 }

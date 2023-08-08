@@ -3,5 +3,6 @@
 
 
 void updateDevices(profile *p, uint8_t i, uint8_t update);
+void configureLadder(void);
 float readSensor(void);
 void initADC(void);

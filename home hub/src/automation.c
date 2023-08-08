@@ -7,19 +7,13 @@
 #define LGREEN 1 << 17
 #define LBLUE 1 << 18
 
+#define LWHITE LRED | LGREEN | LBLUE
+
 #define RRED 1 << 19
 #define RGREEN 1 << 20
 #define RBLUE 1 << 21
 
-#define Rled 0
-#define Lled 1
-
-#define blind1 ((FIO2PIN >> 1) & 0x1)
-#define blind2 ((FIO2PIN >> 2) & 0x1)
-#define blind3 ((FIO2PIN >> 3) & 0x1)
-#define light1 ((FIO2PIN >> 4) & 0x1)
-#define light2 ((FIO2PIN >> 5) & 0x1)
-#define sprinkler ((FIO2PIN >> 6) & 0x1)
+#define RWHITE RRED | RGREEN | RBLUE
 
 #define MIN_BRIGHTNESS 0.2f
 #define ADCHANNEL 0x2
@@ -31,14 +25,13 @@ void configureLadder() {
 	
 	PINSEL4 &= ~0x11; //set to GPIO
 	
+	//set as output
 	FIO0DIR |= 0x1 << 22;	//ladder output
 	FIO2DIR |= 0xFF << 1; //ladder leds output
+	FIO3DIR |= 0x3F << 16; //RGB leds output
 	
 	//enable
-	FIO0SET |= 0x1 << 22; //ladder
-	
-	//set ladder leds to 0
-	//FIO2PIN &= ~(0xFF << 1);
+	FIO0SET = 0x1 << 22; //led ladder
 }
 
 float readSensor() {
@@ -52,20 +45,40 @@ float readSensor() {
 	return x;
 }
 
+
+//bit 1 -> sprinkler
+//Rled -> light 1
+//Lled -> light 2
+//bit 6~8 -> blind 1~3
+void configureDevices(uint8_t control) {	
+	//FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | control << 1; //store bits
+
+	uint8_t blinds = control & 0x7;
+	uint8_t sprinkler = (control >> 5) & 0x1;
+	uint8_t lights = (control >> 3) & 0x3;
+	uint32_t Rled = (lights & 0x1) ? RWHITE : 0x0;
+	uint32_t Lled = (lights & 0x2) ? LWHITE : 0x0;
+	
+	FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | (blinds << 6 | sprinkler << 1);
+	FIO3PIN = (FIO3PIN & ~(0x3F << 16)) | Rled | Lled;
+ }
+
 void updateDevices(profile *p, uint8_t i, uint8_t update) {
-	configureLadder();//give IO to ladder
+	
+	uint8_t control = 0;
+	
+	if (update)
+		control = p->data[i]; //read bit pattern
 	
 	if (p->useSensor) {
 	if (readSensor() < MIN_BRIGHTNESS)
-		FIO2PIN |= 0x3 << 4; //toggle lights on
+		control |= 0x3 << 3; //toggle lights on
 	else
-		FIO2PIN &= ~(0x3 << 4); //toggle lights off
+		control &= ~(0x3 << 3); //toggle lights off
 	}
 	
-	if (update)
-		FIO2PIN = (FIO2PIN & ~(0xFF << 1)) | p->data[i] << 1; //read bit pattern
+	configureDevices(control);
 	
-	PINSEL4  = (PINSEL4 & 0xF0300000) | 0x014FFFFF; //return control to LCD
 	return;
 }
 	

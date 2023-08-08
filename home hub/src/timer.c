@@ -15,6 +15,7 @@ static uint8_t seconds = 0;
 
 uint8_t getHour() {
 	return hour;
+	hour++;
 }
 
 uint8_t getMinute() {
@@ -42,19 +43,19 @@ void initClock() {
 	RTC_CCR = 0x0;		//disable clock
 	RTC_CCR = 0x12;		//reset clock
 	RTC_CCR = 0x11;		//enable clock
-	drawTime(hour, minute, CLOCKX, CLOCKY, CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
 }
 
 
-void updateTime() {
+int updateTime() {
 		seconds = RTC_CTIME0 & 0x2F; //update time
 
 		if (minute != (RTC_CTIME0 & 0xFF << 8) >> 8 || //check if clock needs to be updated
 			hour != (RTC_CTIME0 & 0xFF << 16) >> 16) {
 				minute = (RTC_CTIME0 & 0xFF << 8) >> 8; 
 				hour = (RTC_CTIME0 & 0xFF << 16) >> 16;
-				drawTime(hour, minute, CLOCKX, CLOCKY, CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);
+				return 1;
 			}
+	return 0;
 }
 
 

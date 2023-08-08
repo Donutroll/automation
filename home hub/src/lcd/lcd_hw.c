@@ -124,7 +124,7 @@ lcd_hw_init(void)
   PINSEL1 |= 0x0000003c;
 
   FIO0DIR  |= 0x90000;
-  FIO0SET   = 0x90000;
+  FIO0SET  |= 0x90000;
 
   S0SPCCR = 8;    
   S0SPCR  = 0x38;

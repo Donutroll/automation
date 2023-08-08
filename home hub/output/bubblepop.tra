@@ -19,7 +19,7 @@
 ### ADS-LD Output File: '.\output\bubblepop.axf'
 ### ADS-LD Command File: '.\output\bubblepop.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\bubblepop.lnp', Handle=0x00001098
+### Creating CmdFile '.\output\bubblepop.lnp', Handle=0x00000A3C
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\bubblepop.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

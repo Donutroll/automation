@@ -13,6 +13,11 @@ extern uint16_t data[];
 #define true 1
 #define false 0
 
+#define CLOCKX 0
+#define CLOCKY 0
+#define CLOCKWIDTH 60
+#define CLOCKHEIGHT 27
+
 float getPressure(int x, int z1, int z2) {
 	float pressure = 0;
 	if (z1 == 0)
@@ -35,12 +40,15 @@ void init() {
 	//Turn the LCD on
 	lcdTurnOn();
 	//fill screen
-	lcd_fillScreen(BLACK);
+	lcd_fillScreen(BLUE);
 
 	//Setup touchscreen
 	touch_init();
 	//initClock();
+
 	
+	drawTime(getHour(), getMinute(), CLOCKX, CLOCKY, 
+		CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
 	//oepn ADC
 	initADC();
 	
@@ -57,11 +65,15 @@ int main(void) {
 
 	admin.name = "admin";
 	admin.data = data;
-	admin.useSensor = 0;							
+	admin.useSensor = 0; //sensor is on						
 	
 	init();
 	
 	while (1) {
+			
+		//render important stuff
+		PINSEL4  = ((PINSEL4 & 0xF0300000) | 0x014FFFFF);
+		FIO0CLR = 0x1 << 22; //led ladder
 		//Read in X and Y coordinates
 		touch_read_xy(&x,&y);
 		touch_read_z(&z1, &z2);
@@ -74,17 +86,24 @@ int main(void) {
 		lcd_putString(120,310,(unsigned char *)str);
 		sprintf(str, "seconds: %d", getSeconds());
 		lcd_putString(120,290,(unsigned char *)str);
-
 		
 		//update time for this loop iteration
-		//updateTime(); uncomment this when ready!!
-		if (hourNow != getHour()) {
+		//if (updateTime()) {
+			drawTime(hourNow, getMinute(), CLOCKX, CLOCKY, 
+			CLOCKX + CLOCKWIDTH, CLOCKY + CLOCKHEIGHT);//render clock
+			hourNow = (hourNow + 1) % 24; //change to hourNow = getHour();
 			update = true;
-		}
+		//}
+			
+		PINSEL4  = ~((PINSEL4 & 0xF0300000) | 0x014FFFFF);
+		FIO0SET = 0x1 << 22; //led ladder
+		
+		//automation part
+		configureLadder(); //give control to ladder
 		updateDevices(&admin, hourNow, update);
-		update = false;
-		udelay(10000);									
-		hourNow += 1 % 24;
+		update = false;	
+
+		udelay(500000);
 		
 	}
 }

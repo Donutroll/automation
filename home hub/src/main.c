@@ -39,7 +39,7 @@ void init() {
 
 	//Setup touchscreen
 	touch_init();
-	initClock();
+	//initClock();
 	
 	//oepn ADC
 	initADC();
@@ -51,14 +51,15 @@ int main(void) {
 	profile admin;
 	char x=0,y=0,z1=0,z2=0;
 	uint8_t update = 0;
-	uint8_t hourNow = 100;
+	uint8_t hourNow = 0;
 	float pressure = 0;
 	char str[10];
 
 	admin.name = "admin";
 	admin.data = data;
-	admin.useSensor = 0;
+	admin.useSensor = 0;							
 	
+	init();
 	
 	while (1) {
 		//Read in X and Y coordinates
@@ -73,18 +74,17 @@ int main(void) {
 		lcd_putString(120,310,(unsigned char *)str);
 		sprintf(str, "seconds: %d", getSeconds());
 		lcd_putString(120,290,(unsigned char *)str);
-		
+
 		
 		//update time for this loop iteration
-		updateTime();
+		//updateTime(); uncomment this when ready!!
 		if (hourNow != getHour()) {
-			hourNow = getHour();
 			update = true;
 		}
-		updateDevices(&admin, getHour(), update);
+		updateDevices(&admin, hourNow, update);
 		update = false;
-		
-		
+		udelay(10000);									
+		hourNow += 1 % 24;
 		
 	}
 }

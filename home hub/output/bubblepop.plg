@@ -3,772 +3,514 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\IamDu\Desktop\sine_wave\home hub\bubblepop.uvproj
-Project File Date:  08/06/2023
+C:\Users\IamDu\Desktop\home hub\bubblepop.uvproj
+Project File Date:  08/08/2023
 
 <h2>Output:</h2>
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(95): error:  #65: expected a ";"
-src\main.c(99): warning:  #223-D: function "configureLadder" declared implicitly
-src\main.c(107): error:  #20: identifier "hour" is undefined
-compiling delay.c...
-compiling bubbles.c...
-compiling touch.c...
-src\touch.c(12): warning:  #61-D: integer operation result is out of range
-src\touch.c(12): warning:  #68-D: integer conversion resulted in a change of sign
-compiling drawTime.c...
-src\drawTime.c(21): warning:  #177-D: variable "width" was declared but never referenced
-compiling timer.c...
-src\timer.c(18): warning:  #111-D: statement is unreachable
-compiling automation.c...
-src\automation.c(65): error:  #40: expected an identifier
-src\automation.c(65): error:  #79: expected a type specifier
-src\automation.c(65): error:  #18: expected a ")"
-src\automation.c(65): error:  #18: expected a ")"
-src\automation.c(65): error:  #145: function "<error>" may not be initialized
-src\automation.c(70): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(71): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(71): error:  #20: identifier "LLED" is undefined
-src\automation.c(73): warning:  #68-D: integer conversion resulted in a change of sign
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-assembling LPC2400.s...
-compiling font5x7.c...
-compiling lcd_grph.c...
-compiling lcd_hw.c...
-compiling sdram.c...
+src\gui.h(2): warning:  #1-D: last line of file ends without a newline
+src\main.c(36): warning:  #223-D: function "setScreen" declared implicitly
+src\main.c(37): warning:  #223-D: function "drawClock" declared implicitly
+src\main.c(84): warning:  #223-D: function "drawClock" declared implicitly
+src\main.c(90): warning:  #223-D: function "handleButtons" declared implicitly
+src\main.c(95): error:  #20: identifier "manualbut" is undefined
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+src\gui.c(22): error:  #20: identifier "profile" is undefined
+src\gui.c(23): error:  #20: identifier "rect" is undefined
+src\gui.c(24): error:  #20: identifier "rect" is undefined
+src\gui.c(25): error:  #20: identifier "rect" is undefined
+src\gui.c(26): error:  #20: identifier "rect" is undefined
+src\gui.c(27): error:  #20: identifier "rect" is undefined
+src\gui.c(28): error:  #20: identifier "rect" is undefined
+src\gui.c(29): error:  #20: identifier "rect" is undefined
+src\gui.c(30): error:  #20: identifier "rect" is undefined
+src\gui.c(47): error:  #20: identifier "rect" is undefined
+src\gui.c(52): error:  #20: identifier "rect" is undefined
+src\gui.c(57): error:  #20: identifier "rect" is undefined
+src\gui.c(59): error:  #20: identifier "true" is undefined
+src\gui.c(61): error:  #20: identifier "false" is undefined
+src\gui.c(65): error:  #20: identifier "rect" is undefined
+src\gui.c(66): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(66): error:  #20: identifier "false" is undefined
+src\gui.c(67): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(67): error:  #20: identifier "true" is undefined
+src\gui.c(71): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(80): error:  #20: identifier "xMax" is undefined
+src\gui.c(81): error:  #20: identifier "yMax" is undefined
+src\gui.c(105): error:  #20: identifier "false" is undefined
+src\gui.c(128): error:  #20: identifier "true" is undefined
+src\gui.c(131): error:  #20: identifier "data" is undefined
+src\gui.c(149): error:  #20: identifier "false" is undefined
+src\gui.c(151): error:  #20: identifier "true" is undefined
+src\gui.c(162): error:  #20: identifier "false" is undefined
+src\gui.c(164): error:  #20: identifier "true" is undefined
+src\gui.c(174): error:  #20: identifier "false" is undefined
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(95): error:  #65: expected a ";"
-src\main.c(99): warning:  #223-D: function "configureLadder" declared implicitly
-src\main.c(107): error:  #20: identifier "hour" is undefined
-compiling automation.c...
-src\automation.c(65): error:  #40: expected an identifier
-src\automation.c(65): error:  #79: expected a type specifier
-src\automation.c(65): error:  #18: expected a ")"
-src\automation.c(65): error:  #18: expected a ")"
-src\automation.c(65): error:  #145: function "<error>" may not be initialized
-src\automation.c(73): error:  #20: identifier "LLED" is undefined
-src\automation.c(75): warning:  #68-D: integer conversion resulted in a change of sign
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): error:  #20: identifier "manualbut" is undefined
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+src\gui.c(22): error:  #20: identifier "profile" is undefined
+src\gui.c(23): error:  #20: identifier "rect" is undefined
+src\gui.c(24): error:  #20: identifier "rect" is undefined
+src\gui.c(25): error:  #20: identifier "rect" is undefined
+src\gui.c(26): error:  #20: identifier "rect" is undefined
+src\gui.c(27): error:  #20: identifier "rect" is undefined
+src\gui.c(28): error:  #20: identifier "rect" is undefined
+src\gui.c(29): error:  #20: identifier "rect" is undefined
+src\gui.c(30): error:  #20: identifier "rect" is undefined
+src\gui.c(47): error:  #20: identifier "rect" is undefined
+src\gui.c(52): error:  #20: identifier "rect" is undefined
+src\gui.c(57): error:  #20: identifier "rect" is undefined
+src\gui.c(59): error:  #20: identifier "true" is undefined
+src\gui.c(61): error:  #20: identifier "false" is undefined
+src\gui.c(65): error:  #20: identifier "rect" is undefined
+src\gui.c(66): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(66): error:  #20: identifier "false" is undefined
+src\gui.c(67): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(67): error:  #20: identifier "true" is undefined
+src\gui.c(71): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(80): error:  #20: identifier "xMax" is undefined
+src\gui.c(81): error:  #20: identifier "yMax" is undefined
+src\gui.c(105): error:  #20: identifier "false" is undefined
+src\gui.c(128): error:  #20: identifier "true" is undefined
+src\gui.c(131): error:  #20: identifier "data" is undefined
+src\gui.c(149): error:  #20: identifier "false" is undefined
+src\gui.c(151): error:  #20: identifier "true" is undefined
+src\gui.c(162): error:  #20: identifier "false" is undefined
+src\gui.c(164): error:  #20: identifier "true" is undefined
+src\gui.c(174): error:  #20: identifier "false" is undefined
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(95): error:  #65: expected a ";"
-src\main.c(99): warning:  #223-D: function "configureLadder" declared implicitly
-src\main.c(107): error:  #20: identifier "hour" is undefined
-compiling automation.c...
-src\automation.c(65): error:  #20: identifier "LLED" is undefined
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-src\automation.c(57): warning:  #177-D: variable "sprinkler" was declared but never referenced
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): error:  #20: identifier "manualbut" is undefined
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+src\gui.c(23): error:  #20: identifier "rect" is undefined
+src\gui.c(24): error:  #20: identifier "rect" is undefined
+src\gui.c(25): error:  #20: identifier "rect" is undefined
+src\gui.c(26): error:  #20: identifier "rect" is undefined
+src\gui.c(27): error:  #20: identifier "rect" is undefined
+src\gui.c(28): error:  #20: identifier "rect" is undefined
+src\gui.c(29): error:  #20: identifier "rect" is undefined
+src\gui.c(30): error:  #20: identifier "rect" is undefined
+src\gui.c(47): error:  #20: identifier "rect" is undefined
+src\gui.c(52): error:  #20: identifier "rect" is undefined
+src\gui.c(57): error:  #20: identifier "rect" is undefined
+src\gui.c(59): error:  #20: identifier "true" is undefined
+src\gui.c(61): error:  #20: identifier "false" is undefined
+src\gui.c(65): error:  #20: identifier "rect" is undefined
+src\gui.c(66): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(66): error:  #20: identifier "false" is undefined
+src\gui.c(67): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(67): error:  #20: identifier "true" is undefined
+src\gui.c(71): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(80): error:  #20: identifier "xMax" is undefined
+src\gui.c(81): error:  #20: identifier "yMax" is undefined
+src\gui.c(105): error:  #20: identifier "false" is undefined
+src\gui.c(128): error:  #20: identifier "true" is undefined
+src\gui.c(131): error:  #20: identifier "data" is undefined
+src\gui.c(149): error:  #20: identifier "false" is undefined
+src\gui.c(151): error:  #20: identifier "true" is undefined
+src\gui.c(162): error:  #20: identifier "false" is undefined
+src\gui.c(164): error:  #20: identifier "true" is undefined
+src\gui.c(174): error:  #20: identifier "false" is undefined
+src\gui.c(176): error:  #20: identifier "true" is undefined
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(95): error:  #65: expected a ";"
-src\main.c(99): warning:  #223-D: function "configureLadder" declared implicitly
-src\main.c(107): error:  #20: identifier "hour" is undefined
-compiling automation.c...
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-src\automation.c(57): warning:  #177-D: variable "sprinkler" was declared but never referenced
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): error:  #20: identifier "manualbut" is undefined
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+src\gui.c(25): error:  #20: identifier "rect" is undefined
+src\gui.c(26): error:  #20: identifier "rect" is undefined
+src\gui.c(27): error:  #20: identifier "rect" is undefined
+src\gui.c(28): error:  #20: identifier "rect" is undefined
+src\gui.c(29): error:  #20: identifier "rect" is undefined
+src\gui.c(30): error:  #20: identifier "rect" is undefined
+src\gui.c(31): error:  #20: identifier "rect" is undefined
+src\gui.c(32): error:  #20: identifier "rect" is undefined
+src\gui.c(49): error:  #20: identifier "rect" is undefined
+src\gui.c(54): error:  #20: identifier "rect" is undefined
+src\gui.c(59): error:  #20: identifier "rect" is undefined
+src\gui.c(67): error:  #20: identifier "rect" is undefined
+src\gui.c(68): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(69): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(73): error:  #132: expression must have pointer-to-struct-or-union type
+src\gui.c(82): error:  #20: identifier "xMax" is undefined
+src\gui.c(83): error:  #20: identifier "yMax" is undefined
+src\gui.c(133): error:  #20: identifier "data" is undefined
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(95): error:  #65: expected a ";"
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): error:  #20: identifier "manualbut" is undefined
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling automation.c...
+compiling gui.c...
+src\gui.c(82): error:  #20: identifier "xMax" is undefined
+src\gui.c(83): error:  #20: identifier "yMax" is undefined
+src\gui.c(133): error:  #20: identifier "data" is undefined
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-linking...
-Program Size: Code=19940 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19940 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling drawTime.c...
-src\drawTime.c(21): warning:  #177-D: variable "width" was declared but never referenced
-linking...
-Program Size: Code=19928 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling automation.c...
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-src\automation.c(57): warning:  #177-D: variable "sprinkler" was declared but never referenced
-linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(67): warning:  #68-D: integer conversion resulted in a change of sign
-linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(65): warning:  #68-D: integer conversion resulted in a change of sign
-linking...
-Program Size: Code=19892 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(65): error:  #18: expected a ")"
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+src\gui.c(82): error:  #20: identifier "xMax" is undefined
+src\gui.c(83): error:  #20: identifier "yMax" is undefined
+src\gui.c(133): error:  #20: identifier "data" is undefined
 Target not created
 Build target 'QVGA Base Board'
-compiling automation.c...
+compiling gui.c...
+src\gui.c(136): error:  #20: identifier "data" is undefined
+Target not created
+Build target 'QVGA Base Board'
+compiling gui.c...
 linking...
-Program Size: Code=19892 RO-data=808 RW-data=76 ZI-data=620  
+Program Size: Code=22544 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
 linking...
-Program Size: Code=19908 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19900 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19892 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(60): warning:  #177-D: variable "sprinkler" was declared but never referenced
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(60): warning:  #177-D: variable "sprinkler" was declared but never referenced
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(60): warning:  #177-D: variable "sprinkler" was declared but never referenced
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(60): warning:  #177-D: variable "sprinkler" was declared but never referenced
-src\automation.c(63): warning:  #177-D: variable "Lled" was declared but never referenced
-linking...
-Program Size: Code=19884 RO-data=808 RW-data=76 ZI-data=620  
+Program Size: Code=22544 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(96): warning:  #223-D: function "configureDevices" declared implicitly
 linking...
-Program Size: Code=19884 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-linking...
-Program Size: Code=19884 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling automation.c...
-linking...
-Program Size: Code=19896 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19896 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(59): warning:  #177-D: variable "Rled" was declared but never referenced
-linking...
-Program Size: Code=19892 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling automation.c...
-src\automation.c(59): warning:  #177-D: variable "Rled" was declared but never referenced
-linking...
-Program Size: Code=19912 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19920 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(61): warning:  #177-D: variable "Lled" was declared but never referenced
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(61): warning:  #177-D: variable "Lled" was declared but never referenced
-linking...
-Program Size: Code=19920 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19920 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(61): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(62): error:  #268: declaration may not appear after executable statement in block
-Target not created
-Build target 'QVGA Base Board'
-compiling automation.c...
-src\automation.c(56): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(57): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(58): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(59): error:  #268: declaration may not appear after executable statement in block
-src\automation.c(60): error:  #268: declaration may not appear after executable statement in block
-Target not created
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19912 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19912 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling automation.c...
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling data.c...
-src\data.c(35): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling automation.c...
-linking...
-Program Size: Code=19916 RO-data=808 RW-data=76 ZI-data=620  
-".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
-Build target 'QVGA Base Board'
-compiling main.c...
-src\main.c(59): warning:  #550-D: variable "admin" was set but never used
-src\main.c(61): warning:  #550-D: variable "update" was set but never used
-linking...
-Program Size: Code=19888 RO-data=808 RW-data=76 ZI-data=620  
+Program Size: Code=22540 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): warning:  #223-D: function "configureDevices" declared implicitly
 linking...
-Program Size: Code=19904 RO-data=808 RW-data=76 ZI-data=620  
+Program Size: Code=22400 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(89): error:  #513: a value of type "void" cannot be assigned to an entity of type "char"
+src\main.c(95): warning:  #223-D: function "configureDevices" declared implicitly
+compiling gui.c...
+Target not created
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(95): warning:  #223-D: function "configureDevices" declared implicitly
+linking...
+Program Size: Code=22408 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=22408 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+linking...
+Program Size: Code=22412 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
-src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(97): warning:  #174-D: expression has no effect
+src\main.c(97): error:  #65: expected a ";"
+src\main.c(102): warning:  #12-D: parsing restarts here after previous syntax error
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-compiling gui.c...
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-Target not created
-Build target 'QVGA Base Board'
-compiling main.c...
-src\lpc24xx.h(195): warning:  #47-D: incompatible redefinition of macro "FIO0DIR0" (declared at line 229 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(196): warning:  #47-D: incompatible redefinition of macro "FIO1DIR0" (declared at line 230 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(197): warning:  #47-D: incompatible redefinition of macro "FIO2DIR0" (declared at line 231 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(198): warning:  #47-D: incompatible redefinition of macro "FIO3DIR0" (declared at line 232 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(199): warning:  #47-D: incompatible redefinition of macro "FIO4DIR0" (declared at line 233 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(201): warning:  #47-D: incompatible redefinition of macro "FIO0DIR1" (declared at line 235 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(202): warning:  #47-D: incompatible redefinition of macro "FIO1DIR1" (declared at line 236 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(203): warning:  #47-D: incompatible redefinition of macro "FIO2DIR1" (declared at line 237 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(204): warning:  #47-D: incompatible redefinition of macro "FIO3DIR1" (declared at line 238 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(205): warning:  #47-D: incompatible redefinition of macro "FIO4DIR1" (declared at line 239 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(207): warning:  #47-D: incompatible redefinition of macro "FIO0DIR2" (declared at line 241 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(208): warning:  #47-D: incompatible redefinition of macro "FIO1DIR2" (declared at line 242 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(209): warning:  #47-D: incompatible redefinition of macro "FIO2DIR2" (declared at line 243 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(210): warning:  #47-D: incompatible redefinition of macro "FIO3DIR2" (declared at line 244 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(211): warning:  #47-D: incompatible redefinition of macro "FIO4DIR2" (declared at line 245 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(213): warning:  #47-D: incompatible redefinition of macro "FIO0DIR3" (declared at line 247 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(214): warning:  #47-D: incompatible redefinition of macro "FIO1DIR3" (declared at line 248 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(215): warning:  #47-D: incompatible redefinition of macro "FIO2DIR3" (declared at line 249 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(216): warning:  #47-D: incompatible redefinition of macro "FIO3DIR3" (declared at line 250 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(217): warning:  #47-D: incompatible redefinition of macro "FIO4DIR3" (declared at line 251 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(238): warning:  #47-D: incompatible redefinition of macro "FIO1MASK1" (declared at line 272 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(274): warning:  #47-D: incompatible redefinition of macro "FIO1PIN1" (declared at line 308 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(310): warning:  #47-D: incompatible redefinition of macro "FIO1SET1" (declared at line 344 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(346): warning:  #47-D: incompatible redefinition of macro "FIO1CLR1" (declared at line 380 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(448): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG1" (declared at line 492 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(449): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS1" (declared at line 493 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(450): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG2" (declared at line 494 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(451): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS2" (declared at line 495 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(452): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_CFG3" (declared at line 496 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(453): warning:  #47-D: incompatible redefinition of macro "EMC_DYN_RASCAS3" (declared at line 497 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lpc24xx.h(488): warning:  #47-D: incompatible redefinition of macro "EMC_STA_EXT_WAIT" (declared at line 532 of "C:\Keil\ARM\Inc\Philips\LPC23xx.H")
-src\lcd/lcd_cfg.h(2): error:  #148: variable "lcd_config" has already been initialized
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-compiling gui.c...
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-Target not created
-Build target 'QVGA Base Board'
-compiling main.c...
-src\main.c(11): error:  #5: cannot open source input file "gui.h": No such file or directory
-compiling gui.c...
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-Target not created
-Build target 'QVGA Base Board'
-compiling main.c...
-src\main.c(11): error:  #5: cannot open source input file "gui.h": No such file or directory
-compiling gui.c...
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-Target not created
-Build target 'QVGA Base Board'
-compiling main.c...
-compiling gui.c...
-src\gui.c(15): warning:  #177-D: variable "i" was declared but never referenced
-src\gui.c(16): warning:  #177-D: variable "rect_width" was declared but never referenced
-src\gui.c(17): warning:  #177-D: variable "rect_height" was declared but never referenced
-src\gui.c(18): warning:  #177-D: variable "vert_space" was declared but never referenced
-src\gui.c(19): warning:  #177-D: variable "horz_space" was declared but never referenced
-src\gui.c(81): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(82): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(83): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(160): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(167): error:  #20: identifier "i" is undefined
-src\gui.c(168): error:  #20: identifier "horz_space" is undefined
-src\gui.c(169): error:  #20: identifier "vert_space" is undefined
-src\gui.c(169): error:  #20: identifier "rect_height" is undefined
-src\gui.c(170): error:  #20: identifier "rect_width" is undefined
-src\gui.c(227): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(166): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(315): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(240): warning:  #177-D: variable "str" was declared but never referenced
-Target not created
-Build target 'QVGA Base Board'
-compiling gui.c...
-src\gui.c(76): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(77): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(78): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(155): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(228): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(167): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(316): warning:  #223-D: function "read_pressure" declared implicitly
-src\gui.c(241): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
 linking...
-.\output\bubblepop.axf: Error: L6218E: Undefined symbol read_pressure (referred from gui.o).
+Program Size: Code=22420 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(94): error:  #20: identifier "manualbut" is undefined
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+compiling gui.c...
 Target not created
 Build target 'QVGA Base Board'
 compiling main.c...
-src\main.c(78): warning:  #223-D: function "getPressure" declared implicitly
-compiling gui.c...
-src\gui.c(86): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(87): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(88): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(165): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(238): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(177): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(251): warning:  #177-D: variable "str" was declared but never referenced
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
 linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+Program Size: Code=22392 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+compiling gui.c...
+linking...
+Program Size: Code=22372 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+linking...
+Program Size: Code=22372 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22356 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22344 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22340 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22316 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+compiling gui.c...
+linking...
+Program Size: Code=22332 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+linking...
+Program Size: Code=22332 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22332 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 4 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+src\gui.c(65): warning:  #223-D: function "udelay" declared implicitly
+src\gui.c(72): warning:  #940-D: missing return statement at end of non-void function "isPressed"
+linking...
+Program Size: Code=22420 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 2 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+src\gui.c(65): warning:  #223-D: function "udelay" declared implicitly
+linking...
+Program Size: Code=22412 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Build target 'QVGA Base Board'
+compiling gui.c...
+linking...
+Program Size: Code=22412 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22384 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(74): warning:  #225-D: the format string ends before this argument
+src\main.c(78): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21968 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
-src\gui.h(2): warning:  #1-D: last line of file ends without a newline
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(74): warning:  #225-D: the format string ends before this argument
+src\main.c(78): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
 linking...
-Program Size: Code=22236 RO-data=872 RW-data=96 ZI-data=616  
-".\output\bubblepop.axf" - 0 Error(s), 1 Warning(s).
+Program Size: Code=21968 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
 Build target 'QVGA Base Board'
 compiling main.c...
-src\gui.h(2): warning:  #1-D: last line of file ends without a newline
-src\main.c(42): warning:  #223-D: function "drawClock" declared implicitly
-src\main.c(85): warning:  #223-D: function "drawClock" declared implicitly
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(74): warning:  #225-D: the format string ends before this argument
+src\main.c(78): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21964 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(74): warning:  #225-D: the format string ends before this argument
+src\main.c(78): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21968 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(74): warning:  #225-D: the format string ends before this argument
+src\main.c(78): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #177-D: variable "update" was declared but never referenced
+src\main.c(49): warning:  #177-D: variable "hourNow" was declared but never referenced
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21968 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 8 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(76): warning:  #225-D: the format string ends before this argument
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=22024 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 7 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(76): warning:  #225-D: the format string ends before this argument
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
 compiling gui.c...
-src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
-linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
-".\output\bubblepop.axf" - 0 Error(s), 10 Warning(s).
+src\gui.c(165): warning:  #174-D: expression has no effect
+src\gui.c(165): error:  #65: expected a ";"
+src\gui.c(171): warning:  #12-D: parsing restarts here after previous syntax error
+src\gui.c(178): warning:  #174-D: expression has no effect
+src\gui.c(178): error:  #65: expected a ";"
+src\gui.c(183): warning:  #12-D: parsing restarts here after previous syntax error
+src\gui.c(190): warning:  #174-D: expression has no effect
+src\gui.c(190): error:  #65: expected a ";"
+src\gui.c(195): warning:  #12-D: parsing restarts here after previous syntax error
+src\gui.c(203): warning:  #174-D: expression has no effect
+src\gui.c(203): error:  #65: expected a ";"
+src\gui.c(217): warning:  #12-D: parsing restarts here after previous syntax error
+Target not created
 Build target 'QVGA Base Board'
-compiling main.c...
-src\gui.h(2): warning:  #1-D: last line of file ends without a newline
-src\main.c(35): warning:  #223-D: function "drawClock" declared implicitly
-src\main.c(79): warning:  #223-D: function "drawClock" declared implicitly
-compiling timer.c...
-linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
-".\output\bubblepop.axf" - 0 Error(s), 3 Warning(s).
+compiling gui.c...
+src\gui.c(176): error:  #20: identifier "spf" is undefined
+src\gui.c(176): error:  #165: too few arguments in function call
+src\gui.c(176): error:  #18: expected a ")"
+src\gui.c(178): warning:  #174-D: expression has no effect
+src\gui.c(178): error:  #65: expected a ";"
+src\gui.c(183): warning:  #12-D: parsing restarts here after previous syntax error
+Target not created
 Build target 'QVGA Base Board'
-compiling timer.c...
+compiling gui.c...
+src\gui.c(176): error:  #20: identifier "spf" is undefined
+src\gui.c(176): error:  #165: too few arguments in function call
+src\gui.c(176): error:  #18: expected a ")"
+Target not created
+Build target 'QVGA Base Board'
+compiling gui.c...
 linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+Program Size: Code=22068 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 0 Warning(s).
 Build target 'QVGA Base Board'
-compiling gui.c...
-src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(76): warning:  #225-D: the format string ends before this argument
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(46): warning:  #550-D: variable "admin" was set but never used
+src\main.c(48): warning:  #550-D: variable "update" was set but never used
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
 linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
+Program Size: Code=22072 RO-data=808 RW-data=76 ZI-data=820  
 ".\output\bubblepop.axf" - 0 Error(s), 7 Warning(s).
 Build target 'QVGA Base Board'
-compiling gui.c...
-src\gui.c(96): warning:  #177-D: variable "pass_code" was declared but never referenced
-src\gui.c(97): warning:  #550-D: variable "guess" was set but never used
-src\gui.c(98): warning:  #177-D: variable "str" was declared but never referenced
-src\gui.c(175): warning:  #940-D: missing return statement at end of non-void function "time_set"
-src\gui.c(248): warning:  #117-D: non-void function "main_screen" should return a value
-src\gui.c(187): warning:  #177-D: variable "control" was declared but never referenced
-src\gui.c(261): warning:  #177-D: variable "str" was declared but never referenced
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(76): warning:  #225-D: the format string ends before this argument
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
 linking...
-Program Size: Code=22244 RO-data=872 RW-data=96 ZI-data=616  
-".\output\bubblepop.axf" - 0 Error(s), 7 Warning(s).
+Program Size: Code=22124 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(76): warning:  #225-D: the format string ends before this argument
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(50): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(52): warning:  #177-D: variable "manual" was declared but never referenced
+compiling data.c...
+src\data.c(35): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=22124 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 6 Warning(s).

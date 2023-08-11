@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\IamDu\Desktop\sine_wave\Simulation version\bubblepop.uvproj
+Project File Date:  08/11/2023
+
+<h2>Output:</h2>
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(84): warning:  #225-D: the format string ends before this argument
+src\main.c(52): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(54): warning:  #177-D: variable "manual" was declared but never referenced
+compiling data.c...
+src\data.c(21): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=21260 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 6 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(84): warning:  #225-D: the format string ends before this argument
+src\main.c(52): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(54): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21304 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(84): warning:  #225-D: the format string ends before this argument
+src\main.c(52): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(54): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21304 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).
+Build target 'QVGA Base Board'
+compiling main.c...
+src\gui.h(4): warning:  #1-D: last line of file ends without a newline
+src\main.c(80): warning:  #225-D: the format string ends before this argument
+src\main.c(84): warning:  #225-D: the format string ends before this argument
+src\main.c(52): warning:  #550-D: variable "pressure" was set but never used
+src\main.c(54): warning:  #177-D: variable "manual" was declared but never referenced
+linking...
+Program Size: Code=21304 RO-data=808 RW-data=76 ZI-data=820  
+".\output\bubblepop.axf" - 0 Error(s), 5 Warning(s).

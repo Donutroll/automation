@@ -399,11 +399,6 @@
               <FilePath>.\src\delay.c</FilePath>
             </File>
             <File>
-              <FileName>bubbles.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\bubbles.c</FilePath>
-            </File>
-            <File>
               <FileName>touch.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\touch.c</FilePath>

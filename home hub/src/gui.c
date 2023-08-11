@@ -21,9 +21,10 @@
 #define true 1
 #define false 0
 
-#define xMax 	240
-#define yMax 320
+#define xMax 	240	//max screen size X
+#define yMax 320	//max screen size Y
 
+//defined in profile.h
 profile admin;
 rect Screen;
 rect Clock;
@@ -35,11 +36,13 @@ rect sprinklerbut;
 rect manualbut;
 extern uint16_t data[];
 
+//draws clock onto screen
 void drawClock(int hour, int minute) {
 	drawTime(hour, minute, Clock.x, Clock.y, 
 		Clock.x + Clock.w, Clock.y + Clock.h);//render clock
 }
 
+//calculates pressure of touchscreen
 float getPressure(int x, int z1, int z2) {
 	float pressure = 0;
 	if (z1 == 0)
@@ -50,28 +53,28 @@ float getPressure(int x, int z1, int z2) {
 }
 
 
+//wrapper for drawing rects
 void drawRect(rect R, lcd_color_t c) {
 	lcd_drawRect(R.x, R.y, R.x+R.w, R.y + R.h, c);
 }
 
 
+//wrapper for drawing button
 void drawButton(rect R,  lcd_color_t c) {
 	drawRect(R,c);
 	lcd_putString(R.x + R.w/3, R.y + R.h/2, R.name);
 }
 
+//check if press is within region
 int isPressed(rect R, char x, char y) {
 	if (x >= R.x && x <= (R.x + R.w) && y >= R.y && y <= (R.y + R.h)){
-		udelay(500);
-		if (x >= R.x && x <= (R.x + R.w) //double check condition
-			&& y >= R.y && y <= (R.y + R.h))
-					return true;
+		return true;
 	}
 	
 	return false;
 }
 
-
+//updates state of the on-screen buttons
 void triggerButton(rect *R) {
 			if (R->on == false){
 				R->on = true;
@@ -84,6 +87,7 @@ void triggerButton(rect *R) {
 }
 
 
+//renders the default screen
 void setScreen(void) {
 	
 	Screen.x = 0;
@@ -152,7 +156,7 @@ void setScreen(void) {
 	drawButton(manualbut, COLOR);
 }
 
-
+//checks which button has been pressed
 void handleButtons(char *manual_state, int x, int y){
 
 if (manualbut.on) {
@@ -196,11 +200,11 @@ if (manualbut.on) {
 	}
 	
 			if (isPressed(manualbut, x, y)) {
-				if (manualbut.on == false) { //
+				if (manualbut.on == false) { //turn on button
 					manualbut.on = true;
 					drawButton(manualbut, GREEN);
 				}
-				else if (manualbut.on == true) {
+				else if (manualbut.on == true) { //turn off button
 					manualbut.on = false;
 					*manual_state = 0;
 					drawButton(manualbut, WHITE);

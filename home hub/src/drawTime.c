@@ -4,13 +4,15 @@
 #define BORDER 2
 #define THICKNESS 1
 
-//ordering of function calls
+//ordering of function calls to fillRect
 //   -	1
 // 4| |5
 //   -3
 // 6| |7
 //   - 2
 
+
+//renders a number onto the screen
 void drawNum(unsigned short num, unsigned short x1, unsigned short y1, unsigned short x2, 
 unsigned short y2, unsigned int border, unsigned int thickness, unsigned short colour) {
 	
@@ -123,7 +125,7 @@ unsigned short y2, unsigned int border, unsigned int thickness, unsigned short c
 		
 }
 
-
+//draws the clock
 void drawTime(unsigned short hour, unsigned short minute, unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2) {
 	
 	unsigned short width = x2 - x1;

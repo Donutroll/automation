@@ -30,11 +30,12 @@ void init() {
 
 	//Setup touchscreen
 	touch_init();
-	//initClock();
+	//initClock(); 
 
+	//draw menu
 	setScreen();	
+	//overlay clock
 	drawClock(getHour(), getMinute());
-
 	
 	//oepn ADC
 	initADC();
@@ -43,12 +44,13 @@ void init() {
 
 
 int main(void) {
-	profile admin;
-	char x=0,y=0,z1=0,z2=0;
-	uint8_t update = 0;
-	uint8_t hourNow = 0;
+	
+	profile admin; //defined in profile.h
+	char x=0,y=0,z1=0,z2=0; //touch position bits
+	uint8_t update = 0;	//update per hour flag
+	uint8_t hourNow = 0; //current registered hour
 	float pressure = 0;
-	char manual_state = 0;
+	char manual_state = 0; //state of peripherals according to on-screen buttons
 	char manual = true;
 	char str[10];
 
@@ -62,15 +64,17 @@ int main(void) {
 			
 		//render important stuff
 		PINSEL4 = ((PINSEL4 & 0xF0300000) | 0x014FFFFF);
-		//FIO0CLR = 0x1 << 22; //clear ladder enable
 		
 		//Read in X and Y coordinates
 		touch_read_xy(&x,&y);
 		if (x == 0)
 			y = 0;
+			
+		//account for offset
+		y += 30;
 		touch_read_z(&z1, &z2);
 		
-		//debugging
+
 		pressure = getPressure(x, z1, z2);
 		if(manualbut.on == false) {
 			sprintf(str, "auto on ", str);
@@ -80,22 +84,26 @@ int main(void) {
 			sprintf(str, "auto off", str);
 			lcd_putString(140,150,(unsigned char *)str);
 		}
-		sprintf(str, "x: %d y: %d", x, y);
-		lcd_putString(120,310,(unsigned char *)str);
-		sprintf(str, "seconds: %d", getSeconds());
-		lcd_putString(120,290,(unsigned char *)str);
+		
+		//debugging
+		//sprintf(str, "x: %d y: %d", x, y);
+		//lcd_putString(120,310,(unsigned char *)str);
+		//sprintf(str, "seconds: %d", getSeconds());
+		//lcd_putString(120,290,(unsigned char *)str);
 		
 		//update time for this loop iteration
 		//if (updateTime()) {
 			drawClock(hourNow, getMinute());//render clock
 			hourNow = (hourNow + 1) % 24; //change to hourNow = getHour();
-			update = true;
+			update = true; //update everytime hour changes
 		//}
 		
+		//handle buttons
 		handleButtons(&manual_state,x,y);
-			
-		PINSEL4  = ~((PINSEL4 & 0xF0300000) | 0x014FFFFF);
-		configureLadder(); //give control to ladder
+
+		
+		//adjust peripherals
+		configureLadder(); 
 		
 		if (manualbut.on == true) {
 			configureDevices(manual_state);

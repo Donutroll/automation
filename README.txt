@@ -14,4 +14,12 @@ The board version is an exact copy of the simulation but implements the on-board
 
 
 
-//IMPLEMENTATION LOCATIONS
+//IMPORTANT IMPLEMENTATION LOCATIONS
+main.c | acts as a driver for the rest of the modules, initialises and calls everything else.
+profile.h | defines structs to be used in the system
+data.c | holds data for automation task
+automation.c | functions for driving the daughter board and the light sensor
+gui.c | functions for drawing the screen and interpreting presses
+drawtime.c | functions for drawing the clock onto the screen
+timer.c |functions related to the timers and the on-board clock
+
